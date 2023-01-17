@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huh?</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap');
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat Alternates', sans-serif;
+
+        }
+        body {
+            background-color: #323232;
+        }
+        .wrapper {
+            max-width: 1440px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .row {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        h1 {
+            color: #fff;
+            font-size: 1.4em;
+            margin: 1em;
+        }
+        img {
+            margin-right: .5em;
+        }
+        input {
+            cursor: pointer;
+            padding: 1em 2em;
+            color: #323232;
+            border: none;
+            border-radius: 2em;
+            width: 350px;
+        }
+        input:focus {
+            color: #323232;
+            border: none;
+        }
+        button {
+            background-color: #fff;
+            color: #474747;
+            border: none;
+            border-radius: 2em;
+            padding: 1em 2em;
+            margin-top: 3em;
+            transition: 50ms;
+        }
+        button:hover {
+            cursor: pointer;
+            background-color: rgb(48, 48, 48);
+            color: #fff;
+            transition: 50ms;
+        }
+        .go-away {
+            background-color: rgb(115, 0, 0);
+            color: #fff;
+            transition: .3s;
+        }
+        .go-away:hover {
+            background-color: rgb(201, 17, 17);
+            transition: .3s;
+        }
+        select {
+            font-size: 1em;
+            padding: 1em 2em;
+            margin: .5em;
+            border-radius: 2em;
+            border: none;
+        }
+        select:focus {
+            border: none;
+        }
+        option {
+            font-size: 1em;
+            padding: .5em 1em;
+            margin: 2em;
+            border-radius: 2em;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Почта</h1>
+        <div class="row">
+            <img src="img/user.svg" alt="not found">
+            <input id="inp1" type="gmail" placeholder="yo.user@gmail.com">
+        </div>
+        <h1>Пароль</h1>
+        <div class="row">
+            <img src="img/password.svg" alt="not found">
+            <input id="inp2" type="password" placeholder="User12345678">
+        </div>
+        <h1>Пол</h1>
+        <select name="sex" id="sex">
+            <option value="Male">Мужской</option>
+            <option value="Female">Женский</option>
+        </select>
+        <button id="but">Зарегистрироваться</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
